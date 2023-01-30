@@ -36,3 +36,154 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.all-back-img {
+  background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmVkJTIwbW91bnRhaW58ZW58MHx8MHx8&w=1000&q=80");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.sign-form {
+  padding: 2rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  border-radius: 5px;
+  min-height: 75vh;
+}
+
+.sign-heading {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.first-last {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  width: 100%;
+  margin: 6px 0px;
+  height: 30px;
+  padding: 3px;
+  padding-left: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.first-last-error {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.first-last-error > :nth-child(1) {
+  max-width: 48%;
+}
+
+.first-last-error > :nth-child(2) {
+  max-width: 48%;
+  align-items: flex-start;
+}
+
+.first-last > :nth-child(1) {
+  margin-right: 19px;
+  width: 45%;
+}
+.first-last > :nth-child(2) {
+  width: 45%;
+}
+
+@media (min-width: 768px) {
+  .sign-form {
+    width: 30%;
+    min-height: 65vh;
+  }
+  input {
+    height: 40px;
+  }
+}
+
+.form-button {
+  height: 45px;
+  width: 100%;
+  margin: 1px 0px;
+  background-color: #f5e50a;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-size: 15px;
+  font-family: cursive;
+  font-weight: 700;
+}
+
+select {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 30px;
+}
+
+.warning-span {
+  color: red;
+  font-size: 16px;
+  align-self: flex-start;
+  margin: 2px 0px;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  align-self: flex-start;
+  font-style: normal;
+}
+
+label {
+  color: #ffffff;
+}
+
+.all-checks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.check-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ */
+
+/* /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/ */
+
+/* /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ */
